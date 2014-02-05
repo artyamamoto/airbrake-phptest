@@ -1,5 +1,6 @@
 { 
   "require": {
-    "dbtlr/php-airbrake": "dev-master"
+    "airbrake/airbrake-php": "dev-master",
+    "chrisboulton/php-resque": "1.2.x"
   }
 }

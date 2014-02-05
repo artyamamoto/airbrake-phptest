@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Airbrake' => array($vendorDir . '/dbtlr/php-airbrake/src'),
+    'Resque' => array($vendorDir . '/chrisboulton/php-resque/lib'),
+    'Airbrake' => array($vendorDir . '/airbrake/airbrake-php/src'),
 );

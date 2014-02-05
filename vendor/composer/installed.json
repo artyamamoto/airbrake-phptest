@@ -1,23 +1,23 @@
 [
     {
-        "name": "dbtlr/php-airbrake",
+        "name": "airbrake/airbrake-php",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/dbtlr/php-airbrake.git",
-            "reference": "115eab54f991e64e00b18326b67eec18341b8ae9"
+            "url": "https://github.com/airbrake/airbrake-php.git",
+            "reference": "e02ebff9ca2b7bdf0138ad195652da5880334d47"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/dbtlr/php-airbrake/zipball/115eab54f991e64e00b18326b67eec18341b8ae9",
-            "reference": "115eab54f991e64e00b18326b67eec18341b8ae9",
+            "url": "https://api.github.com/repos/airbrake/airbrake-php/zipball/e02ebff9ca2b7bdf0138ad195652da5880334d47",
+            "reference": "e02ebff9ca2b7bdf0138ad195652da5880334d47",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.1"
         },
-        "time": "2013-07-08 15:15:25",
+        "time": "2014-01-28 23:15:15",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -31,18 +31,63 @@
         ],
         "authors": [
             {
-                "name": "Drew Butler",
-                "email": "hi@dbtlr.com",
-                "homepage": "http://dbtlr.com"
+                "name": "Airbrake",
+                "email": "support@airbrake.io",
+                "homepage": "http://airbrake.io"
             }
         ],
         "description": "A PHP 5.3 library for sending errors to the Airbrake.io service.",
-        "homepage": "https://github.com/dbtlr/php-airbrake",
+        "homepage": "https://github.com/airbrake/airbrake-php",
         "keywords": [
             "airbrake",
             "errors",
             "exceptions",
             "logging"
+        ]
+    },
+    {
+        "name": "chrisboulton/php-resque",
+        "version": "1.2",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/chrisboulton/php-resque.git",
+            "reference": "0549d6c88a4aed934655b7c03b6153349d6c3ad0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/chrisboulton/php-resque/zipball/0549d6c88a4aed934655b7c03b6153349d6c3ad0",
+            "reference": "0549d6c88a4aed934655b7c03b6153349d6c3ad0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-10-13 07:28:16",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Resque": "lib"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Boulton",
+                "email": "chris@bigcommerce.com"
+            }
+        ],
+        "description": "Redis backed library for creating background jobs and processing them later. Based on resque for Ruby.",
+        "homepage": "http://www.github.com/chrisboulton/php-resque/",
+        "keywords": [
+            "background",
+            "job",
+            "redis",
+            "resque"
         ]
     }
 ]

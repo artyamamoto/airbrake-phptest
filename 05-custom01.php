@@ -18,6 +18,10 @@ class CustomClient extends Airbrake\Client {
             'environmentName' => 'STAGE',
             'component' => 'hoge component' ,
             'action' => 'hoge action' ,
+
+            'secure' => false,
+            'port' => 80,
+            'async' => true,
         ));
         parent::__construct($config);
     }
@@ -29,19 +33,14 @@ class CustomClient extends Airbrake\Client {
             $this->notifyOnException($e);
         }
     }
+
     public function notifyOnException(Exception $exception) {
         $notice = new Airbrake\Notice;
         $notice->load(array(
             'errorClass'   => get_class($exception),
             'backtrace'    => $this->cleanBacktrace($exception->getTrace() ?: debug_backtrace()),
             'errorMessage' => $exception->getMessage().' in '.$exception->getFile().' on line '.$exception->getLine(),
-
-            // ここを追加
-            // デフォルトが配列なのに、配列を入れるとjson_encodeされてさらに文字列になるため、読めない。。。
-            // 'extraParameters' => array('hoge' => 'ほげらっちょ', 'fuga'=>'ふが' ),
-            'extraParameters' => 'ほげらっちょ',
         ));
-
         return $this->notify($notice);
     }
 
