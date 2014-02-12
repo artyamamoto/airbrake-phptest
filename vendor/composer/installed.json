@@ -89,5 +89,40 @@
             "redis",
             "resque"
         ]
+    },
+    {
+        "name": "flippa-official/errbit-php",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Flippa/ErrbitPhp",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/flippa/errbit-php.git",
+            "reference": "e15eb15ca37963ee7dcc5dae0a70d5420fca85a4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/flippa/errbit-php/zipball/e15eb15ca37963ee7dcc5dae0a70d5420fca85a4",
+            "reference": "e15eb15ca37963ee7dcc5dae0a70d5420fca85a4",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-05-03 07:04:08",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "lib/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Errbit & Airbrake Client for PHP",
+        "homepage": "https://github.com/flippa/errbit-php"
     }
 ]

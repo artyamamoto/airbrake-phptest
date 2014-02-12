@@ -6,4 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Errbit' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit.php',
+    'Errbit_ErrorHandlers' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/ErrorHandlers.php',
+    'Errbit_Errors_Base' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/Errors/Base.php',
+    'Errbit_Errors_Error' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/Errors/Error.php',
+    'Errbit_Errors_Fatal' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/Errors/Fatal.php',
+    'Errbit_Errors_Notice' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/Errors/Notice.php',
+    'Errbit_Errors_Warning' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/Errors/Warning.php',
+    'Errbit_Exception' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/Exception.php',
+    'Errbit_Notice' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/Notice.php',
+    'Errbit_XmlBuilder' => $vendorDir . '/flippa-official/errbit-php/Flippa/ErrbitPhp/lib/Errbit/XmlBuilder.php',
 );
